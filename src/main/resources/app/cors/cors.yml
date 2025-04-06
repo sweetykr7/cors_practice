@@ -1,0 +1,22 @@
+app.cors.endpoints:
+  - path: "/a"
+    allowed:
+      headers: "*"
+      methods: "*"
+      origins:
+        - http://localhost:3000
+        - https://localhost:3000
+      credentials: true
+    exposed:
+      headers: "*"
+    max-age: 3_600
+  - path: "/b"
+    allowed:
+      headers: "*"
+      methods: "*"
+      origins:
+        - http://blolet.com
+      credentials: true
+    exposed:
+      headers: "*"
+    max-age: 3_600
