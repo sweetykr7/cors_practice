@@ -29,7 +29,7 @@ publishing {
         //
         create<MavenPublication>("cors-core") {
             from(components["java"])
-            groupId = "com.github.merge-simpson"
+            groupId = "com.github.sweetykr7"
             artifactId = project.name
             version = project.version.toString()
         }
@@ -53,3 +53,5 @@ tasks.jar {
     // 다운로드 하려는 파일 이름: example-error-code-api-0.1.0.jar
     // 위 명령 누락 때 파일 이름: example-error-code-api-0.1.0-plain.jar
 }
+
+//test
